@@ -1,0 +1,184 @@
+<html>
+    <title> User Feedback</title>
+    <head>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/userstyle.css" /> 
+        <link rel="stylesheet" type="text/css" href="CSS/viewFeedbackstyle.css" /> 
+    </head>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <img src="../Images/evlogo.jfif" class="logo">
+                <li class="active"><a href="Userpage.html"><i class="far fa-file-alt"></i> User page</a></li>
+                <li><a href="bunkRequest.html"><i class="fas fa-university"></i> Bunk Request</a></li>
+                <li><a href="requestView.html"> <i class="fas fa-eye"></i> Request View</a></li>
+                <li><a href="reports.html"><i class="fas fa-bug"></i> Reports</a></li>
+                <li ><a href="#"><i class="fas fa-comment-dots"></i> Feedback</a>
+                <div class="submenu">
+                    <ul>
+                        <li onclick="showgivefeedback()"><a>Give</a></li>
+                        <li><a href="viewFeedback.html">View</a></li>
+                    </ul>
+                </div>
+            </li>
+            <div class="myprofile">
+                <li><a href="#"> <i class="fas fa-user-tag"></i> </a>
+                    <div class="submenu1">
+                        <ul>
+                            <li onclick="showmyprofile1()"><a>My profile</a></li>
+                            <li onclick="changepassword()"><a>change Password</a></li>
+                            <li><a href="../index.html">logout</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            </ul>
+        </nav>
+        <!----------------------- video code----------------------->
+        <!-- <video autoplay muted loop class="myVideo1">
+            <source src="Images/vedio.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video> -->
+        
+        <h1  class="text" >Welcome to our Project</h1>
+
+        <!-- ===========start of animation ============ -->
+        <!-- <div class="bubbles">
+            <img src=https://www.freepik.com/free-vector/clear-bubble-design-element-vector-blue-background_17221254.htm#query=iridescent%20bubble&position=0&from_view=keyword&track=ais alt="">
+            <img src="https://www.freepik.com/free-vector/clear-bubble-design-element-vector-blue-background_17221254.htm#query=iridescent%20bubble&position=0&from_view=keyword&track=ais" alt="">
+            <img src="https://www.freepik.com/free-vector/clear-bubble-design-element-vector-blue-background_17221254.htm#query=iridescent%20bubble&position=0&from_view=keyword&track=ais" alt="">
+            <img src="https://www.freepik.com/free-vector/clear-bubble-design-element-vector-blue-background_17221254.htm#query=iridescent%20bubble&position=0&from_view=keyword&track=ais" alt="">
+            <img src="https://www.freepik.com/free-vector/clear-bubble-design-element-vector-blue-background_17221254.htm#query=iridescent%20bubble&position=0&from_view=keyword&track=ais" alt="">
+        </div> -->
+
+        <!-- ==============end of animation ============= -->
+        <!-- START givefeedback actual code-->
+<div class="givefeedback">
+    <div class="feedbackheader">
+    
+    
+    <h1 style="font-size:30px";> Give FeedBack<h1>
+    <span onclick="closegivefeedback()">&times;</span>
+    </div>
+    <div class="gfcontainer">
+    
+    <label>username:</label>
+    <input type="text" name="uname" readonly/>
+    <label>mob no:</label>
+    <input type="text" name="umob" readonly/>
+    <label>F date:</label>
+    <input type="text" name="fdate" readonly/>
+    <label>F On:</label>
+    <input type="text" name="fon" placeholder="Feed on which service"/>
+    <label>Ratings:*****</label>
+    <input type="submit" value="send" class="btn"/>
+    <input type="reset" value="Clear" class="btn"/>
+    </div>
+    </div>
+    
+    <!-- script START of Feedback-->
+    <script>
+    function showgivefeedback()
+    {
+    document.querySelector(".givefeedback").classList.add("showgivefeedback");
+    
+    }
+    function closegivefeedback(){
+    document.querySelector(".givefeedback").classList.remove("showgivefeedback");
+    }
+    </script>
+
+
+
+<div class="changepassword">
+    <div class="changepasswordheader">
+    
+    
+    <h1 style="font-size:30px";> Give FeedBack<h1>
+    <span onclick="closechangepassword()">&times;</span>
+    </div>
+    <div class="cfcontainer">
+    
+    <label>USERNAME:</label>
+    <input type="text" name="uname" placeholder="username"/>
+    <label>PASSWORD:</label>
+    <input type="text" name="umob" placeholder="password"/> 
+    <input type="submit" value="submit" class="btn"/>
+    <input type="reset" value="Clear" class="btn"/>
+    </div>
+    </div>
+    
+    <!-- script START of Feedback-->
+    <script>
+    function changepassword()
+    {
+    document.querySelector(".changepassword").classList.add("showchangepassword");
+    
+    }
+    function closechangepassword(){
+    document.querySelector(".changepassword").classList.remove("showchangepassword");
+    }
+    </script>
+    
+    <!-- script END of Feedback-->
+
+    <!-- start of myprofile -->
+<!-- start  of myproile html-->
+<div class="myprofile1">
+    <div class="myprofileheader">
+        <a><center> <img src="images/user2.jpg" style="border-radius: 50%; height: 40px; width: 40px;"><input type="file"></input></center></a>
+    <h1>User Profile </h1>
+
+    <span onclick="closemyprofile1()">&times;</span>
+    </div>
+    <div class="mycontainer">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="enter name" />
+    <label>Mob NO:</label>
+    <input type="text" name="mob" placeholder="enter mob"/>
+    <label>Email:</label>
+    <input type="text" name="mail" placeholder="email"/>
+    <!-- <label >Gender:</label>
+    <select name="country">
+        <option >Male</option>
+        <option >Famale</option>
+        <option>others</option>
+    </select> -->
+    
+    <input type="submit" value="Update" class="btn"/>
+    </div>
+    
+    </div>
+
+
+
+    <!-- end  html-->
+    <script>
+    function showmyprofile1()
+    {
+    document.querySelector(".myprofile1").classList.add("showmyprofile1");
+    
+    }
+    function closemyprofile1(){
+    document.querySelector(".myprofile1").classList.remove("showmyprofile1");
+    }
+    </script>
+
+   
+ 
+
+
+
+        <!-- ========== start of footer ============= -->
+
+    <div class="footer1">
+        <h3>&copy; 2023 Project Title Demo. All rights reserved | Design by Software EV.</h3>
+    </div>
+    <!-- ============ end of footer ============== -->
+    </div>
+    
+</html>

@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>
+        admin page
+    </title>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/adminstyle.css" />
+
+</head>
+<div class="header">
+    <marquee scrollamount="10" behavior="alternate">
+        <table>
+            <tr>
+                <!-- <th><img src="Image/lg.jpg" class="logo" style="border-radius: 100px;"></a></th> -->
+                <th style="color:rgb(0, 0, 0); font-size: 50px;">EV Recharge</th>
+            </tr>
+        </table>
+    </marquee>
+</div>
+<!------------------- end nav bar ------------------>
+<div class="side-bar">
+    <div class="profile-img">
+        <img
+            src="https://icon2.cleanpng.com/20180419/bhw/kisspng-computer-icons-laborer-female-5ad87e2b6e0a39.9384034615241375154507.jpg">
+        <h5>Admin</h5>
+    </div>
+
+    <!--Profile CODE ENDED HERE-->
+
+    <div class="item" ><a href="adminpage.html"><i
+                class="fas fa-chart-line"></i>Dashborad</a></div>
+    <div class="item" style="background-color:orange;"><a class="dropdown-toggle"><i class="fas fa-wrench"></i>Bunk<i
+                class="fas fa-chevron-down"></i></a>
+
+
+        <ul class="dropdown">
+            <li> <a class="item" href="CreateBunk.html"> Create </a></li>
+            <li><a class="item" href="viewbunk.html"> View</a></li>
+        </ul>
+
+    </div>
+
+    <div class="item"><a href="./requestView.html"><i class="fas fa-users"></i>Request View</a></div>
+
+        <div class="item"><a href="./salesReport.html"><i class="fas fa-users"></i>Sales Report</a></div>
+            <div class="item"><a href="./userFeedback.html"><i class="fas fa-users"></i>User Feedback</a></div>
+                <div class="item" ><a href="./UserView.html"><i class="fas fa-users"></i>User View</a>
+                </div>
+                <div class="item"><a class="dropdown-toggle"><i class="fas fa-tools"></i>Settings<i
+                            class="fas fa-chevron-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li> <a class="item" href="change-password.html"> Change Password</a></li>
+                        <li><a class="item" href="../index.html"> Logout</a></li>
+                    </ul>
+                </div>
+           
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').click(function () {
+            $(this).next('.dropdown').slideToggle();
+        });
+    });
+
+</script>
+<!-- Dashboard contain -->
+<!-- start of driver view-->
+<div class="bvmaincontainer">
+    <div class="bvcontainer">
+       <center>
+           <h2>VIEW BUNK DETAILS</h2>
+   </center>
+<center>
+   <table>
+       <tr>
+           <th>S.No</th>
+           <th>Bunk Name</th>
+           <th>Bunk Location</th>
+           <th>Bunk Incharge</th>
+           <th>Contact No</th>
+           <th>Update</th>
+           <th>Delete</th>
+           
+       </tr>
+       <tr>
+          
+           <td>1</td>
+           <td>AB EV Recharge</td>
+           <td>Belagavi</td>
+           <td>Amit</td>
+           <td>9880944510</td>
+           <td><input type="submit" name="update"value="update" class="btn"/></td>
+           <td><input type="submit" name="Delete"value="Delete" class="btn"/></td>
+       </tr>
+       <tr>
+          
+        <td>1</td>
+        <td>AB EV Recharge</td>
+        <td>Hidkal Dam</td>
+        <td>7406352411</td>
+        <td><input type="submit" name="update"value="update" class="btn"/></td>
+        <td><input type="submit" name="Delete"value="Delete" class="btn"/></td>
+    </tr>       
+   </table>
+   </center>
+       </div>
+
+    </div>   
+   </div>
+</div>
+
+    <!-- end of driver view-->
+    <div class="footer1">
+        <h3>&copy; 2023 Project Title Demo. All rights reserved | Design by Prof.Santosh
+            Khot(Mob-9008859518).</h3>
+    </div>
+</html>

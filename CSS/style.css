@@ -1,0 +1,925 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/IMG1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(242, 247, 245);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: rgb(215, 57, 226);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background: pink;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.button1:hover span{
+    width: 100%;
+    background-color: blueviolet;
+}
+.button1:hover{
+    border: none;
+    background-color: blueviolet;
+}
+
+.bunk h1{
+    text-align: center;
+}
+
+.navbar li a:hover{
+    color: cyan;
+}
+img :hover{
+    transform: scaleX(-1);
+}
+h1{
+    text-align: center;
+}
+.image1 image{
+    width: 50%;
+}
+.contents{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img1 .bt1:hover{
+    background-color: blueviolet;
+    align-items: center;
+    left: 120px;
+}
+table .img1{
+    border-color: lightblue;
+    border-style: dotted;
+}
+
+/* start of about us css */
+
+.aboutussection{
+    background-image: url(../Images/IMG1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.aboutp{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #05737d;
+   color: white;
+   text-align: center;
+   height: auto;
+   font-size: 25px;
+
+}
+
+/* .active:hover{
+    background-color: darkorchid;
+}
+.active1:hover{
+    background-color: darkorchid;
+}. */
+
+/*
+* {
+    box-sizing: border-box;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+   
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  /*
+  .contactuscontainer {
+    border-radius:15px;
+    background-image: url("Images/IMG1.jpg");
+    background-color:rgb(145, 205, 255);
+    padding: 15px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  /*.contactusformcolumn {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  /*start contact details */
+  /* Remove extra left and right margins, due to padding */
+  /*.conatctusrow {
+      margin-left:230px;
+      margin-top:70px;
+      
+  }
+  /* Float four columns side by side */
+  /*.contactuscolumn {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  
+   Style the counter cards 
+  .contactuscard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }*/
+  .banners{
+      background-color: #54baff;
+      background-image: url(../Images/IMG1.jpg);
+
+  }
+.container{
+    font-size: 25px;
+    border-style: dotted;
+    align-items: center;
+}
+.dropdown_menu{
+    display: none;
+}
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+/* customer sign-up pop-up window css*/
+.center{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-box{
+  margin-top:50px;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(147, 225, 255);
+  height: auto;
+  width: 480px;
+  padding: 18px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgb(171, 68, 255);
+}
+
+.start-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-box.show-modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.modal-box .fa-times{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0569d4;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+
+  color: rgb(255, 254, 255);
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.fa-times:hover{
+  font-size: 22px;
+}
+
+
+.form_container{
+  background: black;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.form_container .form_item{
+  margin-bottom: 25px;
+}
+
+.form_container .form_wrap.form_grp{
+  display: flex;
+}
+
+.form_container .form_wrap.form_grp .form_item{
+  width: 50%;
+}
+
+.form_container .form_wrap.form_grp .form_item:first-child{
+  margin-right: 4%;
+}
+
+.form_container .form_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form_container .form_item input,
+.form_container .form_item select{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dadce0;
+  border-radius: 30px;
+}
+ .form_container .btn{
+  display: flex;
+ }
+
+.form_container .btn .btn1 input{
+  background-color: dodgerblue;
+  width: 150px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 0px;
+  margin-left: 40px;
+  margin-right: 50%;
+}
+/* end of custumer sign-up pop-ip window css*/
+
+
+.asignincenter{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.asigninmodal-box{
+  margin-top:100px;
+  
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(205, 149, 255);
+  height: auto;
+  width: 680px;
+  padding: 18px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px blue;
+}
+
+.asigninstart-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}
+.asigninmodal-box.show-modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.asigninmodal-box .asigninfa-times{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+
+  color: rgb(88, 191, 255);
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.asigninfa-times:hover{
+  font-size: 22px;
+}
+
+.asigninform_container{
+  background: rgb(140, 215, 255);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.asigninform_container .asigninform_item{
+  margin-bottom: 25px;
+}
+
+.asigninform_container .asigninform_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.asigninform_container .asigninform_item input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 30px;
+}
+ .asigninform_container .asiginbtns 
+ {
+	 display:flex; 
+ }
+ .asigninform_container .asiginbtns .cbtn1 input
+ {
+	 background-color:dodgerblue;
+	 width:150px;
+	 color:white;
+	 text-align:center;
+	 border-radius:5px;
+	 padding:15px 0px;
+	 margin-left:70px;
+	 margin-right:70px;
+	 
+ }
+
+ .asignincenter{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.asigninmodal-box{
+  margin-top:100px;
+  
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(205, 149, 255);
+  height: auto;
+  width: 680px;
+  padding: 18px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px blue;
+}
+
+.asigninstart-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}
+.asigninmodal-box.show-modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.asigninmodal-box .asigninfa-times{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+
+  color: rgb(88, 191, 255);
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.asigninfa-times:hover{
+  font-size: 22px;
+}
+
+.asigninform_container{
+  background: rgb(140, 215, 255);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.asigninform_container .asigninform_item{
+  margin-bottom: 25px;
+}
+
+.asigninform_container .asigninform_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.asigninform_container .asigninform_item input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 30px;
+}
+ .asigninform_container .asiginbtns 
+ {
+	 display:flex; 
+ }
+ .asigninform_container .asiginbtns .cbtn1 input
+ {
+	 background-color:dodgerblue;
+	 width:150px;
+	 color:white;
+	 text-align:center;
+	 border-radius:5px;
+	 padding:15px 0px;
+	 margin-left:70px;
+	 margin-right:70px;
+	 
+ }
+
+
+ .csignincenter{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.csigninmodal-box{
+  margin-top:100px;
+  
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(205, 149, 255);
+  height: auto;
+  width: 680px;
+  padding: 18px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px blue;
+}
+
+.csigninstart-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}
+.csigninmodal-box.show-modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.csigninmodal-box .csigninfa-times{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+
+  color: rgb(88, 191, 255);
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.csigninfa-times:hover{
+  font-size: 22px;
+}
+
+.csigninform_container{
+  background: rgb(140, 215, 255);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.csigninform_container .csigninform_item{
+  margin-bottom: 25px;
+}
+
+.csigninform_container .csigninform_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.csigninform_container .csigninform_item input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 30px;
+}
+ .csigninform_container .csiginbtns 
+ {
+	 display:flex; 
+ }
+ .csigninform_container .csiginbtns .cbtn1 input
+ {
+	 background-color:dodgerblue;
+	 width:150px;
+	 color:white;
+	 text-align:center;
+	 border-radius:5px;
+	 padding:15px 0px;
+	 margin-left:70px;
+	 margin-right:70px;
+	 
+ }
+
+ .csignincenter{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.csigninmodal-box{
+  margin-top:100px;
+  
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(205, 149, 255);
+  height: auto;
+  width: 680px;
+  padding: 18px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px blue;
+}
+
+.csigninstart-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}
+.csigninmodal-box.show-modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.csigninmodal-box .csigninfa-times{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+
+  color: rgb(88, 191, 255);
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.csigninfa-times:hover{
+  font-size: 22px;
+}
+
+.csigninform_container{
+  background: rgb(140, 215, 255);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.csigninform_container .csigninform_item{
+  margin-bottom: 25px;
+}
+
+.csigninform_container .csigninform_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.csigninform_container .csigninform_item input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 30px;
+}
+ .csigninform_container .csiginbtns 
+ {
+	 display:flex; 
+ }
+ .csigninform_container .csiginbtns .cbtn1 input
+ {
+	 background-color:dodgerblue;
+	 width:150px;
+	 color:white;
+	 text-align:center;
+	 border-radius:5px;
+	 padding:15px 0px;
+	 margin-left:70px;
+	 margin-right:70px;
+	 
+ }
+ .container{
+  display: flex;
+  /*min-height: 100vh;
+  background: #009688;*/
+  
+  justify-content: center;
+  align-items: center;
+ /* background: url(../Images/IMG1.jpg) no-repeat center center/cover;*/
+
+ }
+ .container form{
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px black;
+  border-radius: 15px;
+  background: black;
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+ }
+.container form h1{
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+.container form input{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid white;
+}
+.container form #lastName,
+.container form #mobile{
+  margin-left: 20px;
+
+}
+.container form h4{
+  color: white;
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+
+}
+.container form textarea{
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  min-width: 600px;
+  min-height: 80px;
+  min-height: 80px;
+}
+textarea::-webkit-scrollbar{
+  width: 1em;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: #b7b7b7;
+}
+.container form #button{
+  border: none;
+  background: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  width: 100px;
+  padding: 0;
+  margin-right: 500px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.container form #button:hover{
+  opacity: 0.7;
+}
+
+
+/*.contact
+ {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../Images/IMG1.jpg);
+  background-size: cover;
+
+ }
+ .contact .content{
+  max-width: 800px;
+  text-align: center;
+ }
+ .contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+
+
+ }
+ .contact .content p{
+  font-weight: 300;
+  color: #fff;
+ }
+ .containers{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+ }
+ .containers .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+ }
+ .containers .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+ }
+ .containers .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  border-radius: 50%;
+  font-size: 22px;
+
+ }
+ .containers .contactInfo .box .icon .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+ }
+ .containers .contactInfo .box .icon .text h3{
+  font-weight: 500;
+  color: #00bcd4;
+ }
+ .contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+ }
+ .contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+ }
+ .contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+ }
+ .contactForm .inputBox input,
+ .contactForm .inputBox textarea
+ {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+ }
+ .contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+ }
+ .contactForm .inputBox input:focus ~ span,
+ .contactForm .inputBox input:valid ~ span,
+ .contactForm .inputBox textarea:focus ~ span,
+ .contactForm .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translate(-20px);
+ }
+ .contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+ } */

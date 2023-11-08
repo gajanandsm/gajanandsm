@@ -1,0 +1,93 @@
+<html>
+    <title> Bunk Request</title>
+    <head>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/userstyle.css" /> 
+        <link rel="stylesheet" type="text/css" href="CSS/viewFeedbackstyle.css" /> 
+    </head>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <img src="../Images/evlogo.jfif" class="logo">
+                <li><a href="Userpage.html"><i class="far fa-file-alt"></i> User page</a></li>
+                <li class="active"><a href="bunkRequest.html"><i class="fas fa-university"></i> Bunk Request</a></li>
+                <li><a href="requestView.html"> <i class="fas fa-eye"></i> Request View</a></li>
+                <li><a href="#"><i class="fas fa-bug"></i> Reports</a></li>
+                <li ><a href="#"><i class="fas fa-comment-dots"></i> Feedback</a>
+                <div class="submenu">
+                    <ul>
+                        <li onclick="showgivefeedback()"><a>Give</a></li>
+                        <li><a href="viewFeedback.html">View</a></li>
+                    </ul>
+                </div>
+            </li>
+            <div class="myprofile">
+                <li><a href="#"> <i class="fas fa-user-tag"></i> </a>
+                    <div class="submenu1">
+                        <ul>
+                            <li onclick="myprofile()"><a>My profile</a></li>
+                            <li onclick="changepassword()"><a>change Password</a></li>
+                            <li><a href="../index.html">logout</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            </ul>
+        </nav>
+
+        <div class="apcontainer">
+            <form action="#">
+        <div class="addproductcontainer">
+            <center>
+                <h2 style="color:black;font-size:40px;"><b>Add Bunk</b></h2>
+            </center>
+        <hr>
+        <table style="margin:60px;color:#ff7b25;"width="100%">
+        <tr>
+        <td><label style="color:blue;font-size:20px;"><b>Select Bunk:<b></label></td>
+        <td><input type="text" name="Bname" placeholder="Select Bunk"></td>
+        </td>
+        </tr>
+        <tr>
+        <td><label style="color:blue;font-size:20px;"><b>Bunk Location:</b></label></td>
+        <td><input type="text" placeholder="Bunk Location"  name="Blocation" id="Blocation" required></td>
+        </tr>
+        </tr>
+        <tr>
+        <td><label style="color:blue;font-size:20px;"><b>Bunk Incharge Name:</b></label></td>
+        <td><input type="text" placeholder="Incharger Name" name="Bincharge" id="Bincharge" required></td>
+        </tr>
+        <tr>
+        <td><label style="color:blue;font-size:20px;"><b>Contact No:</b></label></td>
+        
+        <td><input type="text" placeholder="Contact No" name="BContact" id="BContact" required></td>
+        </tr>
+        <tr>
+            <td><label style="color:blue;font-size:20px;"><b>Available:</b></label></td>
+            
+            <td><input type="text" placeholder="Available" name="BContact" id="BContact" required></td>
+            </tr>
+        <tr>
+        <td align="center"  ><button type="submit"  name="add" class="btn" >Add Bunk</button></td><td>
+        <button type="reset" class="btn" >Clear</button></td>
+        </tr>
+        </table>
+        
+        </form>
+        </div>
+        
+        </div>
+        <!-- end of add product container-->
+            <!----------- end of nav bar------------>
+        
+            <div class="footer1">
+                <h3>&copy; 2023 Project Title Demo. All rights reserved | Design by Prof.Santosh
+                    Khot(Mob-9008859518).</h3>
+            </div>
+        </div>
+        </html>
+        

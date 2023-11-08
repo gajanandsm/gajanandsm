@@ -1,0 +1,663 @@
+/* ========================= User css ====================== */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+} 
+
+/* ===================:start of header css =============== */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/IMG1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.logo{
+    width: 100px;
+    height: 60px;
+    transition: transform 0.3s;
+    border-radius: 35px;
+    margin-left: 40px;
+    margin-top: 20px;
+
+
+}
+.logo:hover{
+    transform: scale(1.7);
+}
+nav ul{
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: 0px;
+    display: inline-flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 15px;
+    padding: 10px 20px;
+    z-index: 1;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+nav ul li:hover{
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.active{
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.submenu{
+    display: none;
+}
+nav ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -23px;
+
+}
+nav ul li:hover .submenu ul{
+    display: block;
+    margin: 5px;
+    background-color: blueviolet;
+
+}
+nav ul li:hover .submenu ul li{
+    width: 85px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+.submenu1{
+    display: none;
+}
+nav ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -23px;
+
+}
+nav ul li:hover .submenu1 ul{
+    display: block;
+    margin: 5px;
+    background-color: blueviolet;
+
+}
+nav ul li:hover .submenu1 ul li{
+    width: 50px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+.myprofile{
+    margin-left: 170px;
+}
+
+/* ==================== end of header Css ============== */
+
+/* start of footer */
+.footer1{
+    position: fixed;
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+}
+ /* end of footer */
+
+ /* ===========start of animation css======= */
+ .bubbles{
+    width: 100%;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    bottom: -70px;
+ }
+ .bubbles img{
+    width: 50px;
+    z-index: 1;
+    animation:bubble 7s linear infinite;
+ }
+ @keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+ }
+
+ .bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 20px;
+ }
+ .bubbles img:nth-child(2){
+    animation-delay: 2s;
+    width: 30px;
+ }
+ .bubbles img:nth-child(3){
+    animation-delay: 4s;
+    width: 20px;
+ }
+ .bubbles img:nth-child(4){
+    animation-delay: 2s;
+    width: 10px;
+ }
+ .bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 20px;
+ }
+ /* =============end of animation css ======= */
+
+ /* ========for text csss ========= */
+ .text{
+    font-size: 50px;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    color: white;
+    animation: textup 8s linear infinite;
+    transform: translateY(300px);
+    animation-iteration-count: infinite;
+ }
+ @keyframes textup
+ {
+    10%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+ }
+
+ /* start of givefeedback css*/
+ .givefeedback{
+	height:600px;
+	width:550px;
+	border:1px solid rgb(34, 83, 244);
+	background-color:rgb(255, 255, 255);
+	position:absolute;
+	top:50%;
+	left:-50%;
+	border-radius:10px;
+	box-shadow:10px 10px 10px pink;
+	padding:10px;
+	transform:translate(-50%,-50%);
+	transition:1s;
+}
+
+.showgivefeedback{
+	left:50%;
+}
+.givefeedback span{
+	position:absolute;
+	top:15px;
+	right:15px;
+	color:orange;
+	font-size:50px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.givefeedback span:hover{
+	color:black;
+}
+
+.givefeedback h1{
+	color:#92e6e6;
+	text-align:center;
+	padding:10px 0px;
+	
+}
+.givefeedback .feedbackheader{
+	margin-top:0px;
+	width:100%;
+	background-color:#e41655;
+	border-radius:10px 10px 0px 0px;	
+}
+.givefeedback .gfcontainer{
+	width:100%;
+	background-color:rgb(110, 203, 236);
+	padding:20px;
+	height:510px;
+}
+.givefeedback .gfcontainer label{
+	width:100%;
+	float:left;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:10px;	
+}
+.givefeedback .gfcontainer input,textarea{
+	width:100%;
+	float:left;
+	padding:10px;
+	border-radius:10px;
+	border:1px solid grey;
+	outline:none;
+	margin-bottom:5px;
+	background-color:lightblue;
+}
+.givefeedback .gfcontainer input,textarea:focus{
+	background-color:lightblue;
+	color:black;
+}
+::placeholder{
+	color:blue;
+	font-size:20px;
+}
+.givefeedback .gfcontainer .btn{
+	width:80px;
+	float:left;
+	padding:15px;
+	border-radius:10px;
+	outline:none;
+	margin-top:40px;
+	margin-bottom:10px;
+	background:linear-gradient(to bottom,red 22%,purple 95%);
+	color:white;
+	font-size:20px;
+	margin-right:40px;
+	margin-left:5px;
+}
+/* end of givefeedback css*/
+
+/* start of change password css*/
+.changepassword{
+	height:400px;
+	width:550px;
+	border:1px solid rgb(34, 83, 244);
+	background-color:rgb(255, 255, 255);
+	position:absolute;
+	top:50%;
+	left:-50%;
+	border-radius:10px;
+	box-shadow:10px 10px 10px pink;
+	padding:10px;
+	transform:translate(-50%,-50%);
+	transition:1s;
+}
+
+.showchangepassword{
+	left:50%;
+}
+.changepassword span{
+	position:absolute;
+	top:15px;
+	right:15px;
+	color:orange;
+	font-size:50px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.changepassword span:hover{
+	color:black;
+}
+
+.changepassword h1{
+	color:#92e6e6;
+	text-align:center;
+	padding:10px 0px;
+	
+}
+.changepassword .changepasswordheader{
+	margin-top:0px;
+	width:100%;
+	background-color:#d71fd7;
+	border-radius:10px 10px 0px 0px;	
+}
+.changepassword .cfcontainer{
+	width:100%;
+	background-color:rgb(110, 203, 236);
+	padding:20px;
+	height:300px;
+}
+.changepassword .cfcontainer label{
+	width:100%;
+	float:left;
+	color:black;
+	font-size:25px;
+	font-weight:bold;
+	margin-bottom:10px;	
+}
+.changepassword .cfcontainer input,textarea{
+	width:100%;
+	float:left;
+	padding:10px;
+	border-radius:10px;
+	border:1px solid grey;
+	outline:none;
+	margin-bottom:5px;
+	background-color:lightblue;
+}
+.changepassword .cfcontainer input,textarea:focus{
+	background-color:lightblue;
+	color:black;
+}
+::placeholder{
+	color:rgb(132, 63, 250);
+	font-size:20px;
+}
+.changepassword .cfcontainer .btn{
+	width:80px;
+	float:left;
+	padding:15px;
+	border-radius:10px;
+	outline:none;
+	margin-top:30px;
+	margin-bottom:10px;
+	background:linear-gradient(to bottom,rgb(250, 65, 223) 22%,purple 95%);
+	color:white;
+	font-size:20px;
+	margin-right:40px;
+	margin-left:5px;
+}
+/* end of change password css*/
+
+
+/* ======================== video of css ======================= */
+
+ /* .myVideo1{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 10%; 
+	min-height: 10%;
+  }  */
+
+  /*start of myprofile css*/
+   
+  .myprofile1{
+	  height:500px;
+	  width:450px;
+	  border:1px solid rgb(0, 0, 0);
+	  background-color:white;
+	  position:absolute;
+	  top:50%;
+	  left:-50%;
+	  border-radius:10px;
+	  box-shadow:10px 10px 10px #dbdbdb;
+	  padding:10px;
+	  transform:translate(-50%,-50%);
+	  transition:1s;
+	  z-index: 1;
+  }
+  .showmyprofile1{
+	  left:50%;
+	  
+  }
+  .myprofile1 span{
+	 position:absolute;
+	 top:4px;
+	 right:15px;
+	 color:#000000;
+	 font-size:50px;
+	 font-weight:bold;
+	 cursor:pointer;
+  }
+  .myprofile1 span:hover{
+  
+	  color: rgb(43, 105, 176);
+  }
+  .myprofile1 h1{
+	 color:rgb(0, 0, 0);
+	 text-align:center;
+	 padding:10px 0px;
+  }
+  .myprofile1 .mycontainer{
+	 width:100%;
+	 height:300px;
+	 padding:20px;
+	 background-color:rgb(191, 185, 185);
+	 
+  }
+	 
+  
+  .myprofile1 .myprofileheader{
+	 width:100%;
+	 margin-top:0px;
+	 background-color:white;
+	 border-radius:10px 10px 0px 0px;	
+	 
+  }
+  .myprofile1 .mycontainer label{
+  width:100%;
+  float:left;
+  color:#242222;
+  font-size:15px;
+  font-weight:bold;
+  margin-bottom:10px;	
+  }
+  .myprofile1 .mycontainer input,textarea,select{
+	 width:100%;
+	 float:left;
+	 padding:15px;
+	 border-radius:10px;
+	 border:1px solid rgb(166, 166, 166);
+	 outline:none;
+	 margin-bottom:10px;	
+	 
+  }
+  .myprofile1 .mycontainer input,textarea:focus{
+	 background-color:#ffffff;
+	 color:rgb(0, 0, 0);
+  }
+  ::placeholder{
+	 color:rgb(94, 94, 94);
+	 font-size:20px;
+  }
+  .myprofile1 .mycontainer  .btn{
+	  width: 30%;
+	  float: left;
+	  padding: 3px;
+	  border-radius: 10px;
+	  outline: none;
+	  margin-top: 25px;
+	  margin-bottom: 20px;
+	  background-color: #158abcf8;
+	  color: white;
+	  margin-left:  120px;
+	  margin-right: 23px;
+	  font-size: 20px;
+	  z-index: 1;
+	  height:10%;
+  }
+  .myprofile1 .mycontainer  .btn:hover{
+	  border-radius:10px;
+	  background-color: #4da4eb;
+  }
+ 
+ /*end of myprofile css*/
+
+ .apcontainer{
+	margin-left:235px;
+	padding:25px;
+	margin-right:10px;
+	
+	
+}
+.addproductcontainer{
+	font-size:13px;
+	margin-top:10px;
+	border-style:solid;
+	border-color:brown;
+	background-color:white;
+	border-radius:180px;
+	height:500px;
+	margin-bottom: 10px;
+	margin-right: 170px;
+	margin-left: 100px; 
+}
+hr{
+	border-color:red; 
+	margin-bottom:20px;
+	margin-top:5px;
+	margin-left:300px;
+	margin-right:300px;
+}
+input[type=text],input[type=password] ,textarea,input[type=file],select{
+	width:300px;
+	padding:10px;
+	margin:5px 0px 22px 0px;
+	border:none;
+	background:tan;
+	color:black; 
+}
+input:focus,select:focus,textarea:focus{
+   background-color:purple;
+   outline:none;
+}
+.btn{
+   background-color:#e74444;
+   color:white;
+   padding:16px 16px;
+   margin:8px 0px;
+   border:none;
+   cursor:pointer;
+   border-radius:20px 0px;
+   width:150px;
+   opacity:0.9;
+}
+.btn:hover{
+   opacity:1;
+   background-color:green;	
+}
+::placeholder{
+   color:black;
+   opacity:1;
+   
+}
+::-ms-input-placeholder{
+   color:white;
+   
+   
+}
+
+/*end of add product container css*/
+
+
+ /* start of Request view*/
+ .rvmaincontainer{
+	margin-left:280px;
+	margin-right:60px;
+	margin-top: 50px;
+	
+}
+.rvcontainer{
+	font-size:13px;
+	padding-right:10px;
+	margin-top:10px;
+	border: 2px ridge rgb(232, 22, 22);
+    background-color: #F1F6F9;
+	border-radius:10px;
+	height:350px;
+	box-shadow:inset 0px 5px 5px rgb(114, 41, 41),0px 10px 10px rgb(114, 41, 41);
+	overflow: auto;
+}
+
+.rvcontainer h2{
+	margin-top:10px;
+	font-family: 'Merienda', cursive;
+    color: #222831;
+}
+.rvcontainer hr{
+  border: 1px solid #ed66d0;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:300px;
+  margin-right:300px;
+}
+.rvcontainer table {
+  margin:10px;
+  border-collapse: separate;
+  width:100%;
+  border: 2px solid black;
+  color:black;
+  transition: transform .2s; /* Animation */
+  text-align: center;
+}
+.rvcontainer table:hover{
+	 transform: scale(1.025); /* (125% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.rvcontainer th {
+  text-align: left;
+  padding: 16px 70px 16px 50px;
+  background-color:#394867;
+  color:white;
+}
+.rvcontainer td {
+  text-align: center;
+  padding: 7px;
+}
+
+.rvcontainer tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.rvcontainer tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.rvcontainer tr{
+	cursor: pointer;
+}
+.rvcontainer tr:hover{
+	background-color:rgb(255, 255, 255);
+}
+.rvcontainer input[type=text] {
+  width:50px;
+  border: none;
+  background: #ffffff;
+  color:white;
+}
+
+.rvcontainer input[type=text]:focus {
+  background-color: #d64161;
+  outline: none;
+}
+.rvcontainer .btn{
+   background-color: #2c003e;
+  color: white;
+  text-align:center;
+  border: none;
+  cursor: pointer;
+  border-radius:10px;
+  width: 80px;
+  height:17px;
+  
+}
+.rvcontainer .btn:hover {
+	background-color:#13445a; 
+
+	}
+	/*end of Request View*/

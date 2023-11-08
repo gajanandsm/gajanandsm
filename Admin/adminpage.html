@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>
+        admin page
+    </title>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/adminstyle.css" />
+
+</head>
+<div class="header">
+    <marquee scrollamount="10" behavior="alternate">
+        <table>
+            <tr>
+                <!-- <th><img src="Image/lg.jpg" class="logo" style="border-radius: 100px;"></a></th> -->
+                <th style="color:rgb(0, 0, 0); font-size: 50px;">EV Recharge</th>
+            </tr>
+        </table>
+    </marquee>
+</div>
+<!------------------- end nav bar ------------------>
+<div class="side-bar">
+    <div class="profile-img">
+        <img
+            src="https://icon2.cleanpng.com/20180419/bhw/kisspng-computer-icons-laborer-female-5ad87e2b6e0a39.9384034615241375154507.jpg">
+        <h5>Admin</h5>
+    </div>
+
+    <!--Profile CODE ENDED HERE-->
+
+    <div class="item" style="background-color:orange;"><a href="adminpage.html"><i
+                class="fas fa-chart-line"></i>Dashborad</a></div>
+    <div class="item"><a class="dropdown-toggle"><i class="fas fa-wrench"></i>Bunk<i
+                class="fas fa-chevron-down"></i></a>
+
+
+        <ul class="dropdown">
+            <li> <a class="item" href="CreateBunk.html"> Create </a></li>
+            <li><a class="item" href="viewbunk.html"> View</a></li>
+        </ul>
+
+    </div>
+
+    <div class="item"><a href="./requestView.html"><i class="fas fa-users"></i>Request View</a></div>
+
+        <div class="item"><a href="./salesReport.html"><i class="fas fa-users"></i>Sales Report</a></div>
+            <div class="item"><a href="./userFeedback.html"><i class="fas fa-users"></i>User Feedback</a></div>
+                <div class="item"><a href="./UserView.html"><i class="fas fa-users"></i>User View</a>
+                </div>
+                <div class="item"><a class="dropdown-toggle"><i class="fas fa-tools"></i>Settings<i
+                            class="fas fa-chevron-down"></i></a>
+
+                    <ul class="dropdown">
+                        <li> <a class="item" href="change-password.html"> Change Password</a></li>
+                        <li><a class="item" href="../index.html"> Logout</a></li>
+                    </ul>
+                </div>
+           
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').click(function () {
+            $(this).next('.dropdown').slideToggle();
+        });
+    });
+
+</script>
+<!-- Dashboard contain -->
+<div class="Admincontainer">
+    <h3 style="color:rgb(8, 103, 227)" ; font-size:30px; 
+    
+    text-align:center;><b>ADMIN DASHBOARD</b></h3>
+    <div class="Adminrow">
+        <div class="Admincolumn">
+            <h2> Total Users:</h2>
+            <h2>150</h2>
+
+        </div>
+        <div class="Admincolumn">
+            <h2> Feedback:</h2>
+            <h2>150</h2>
+        </div>
+        <div class="Admincolumn">
+            <h2> query:</h2>
+            <h2>150</h2>
+        </div>
+    </div>
+<!-- bar chart -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<canvas id="myChart" style="margin-top:160px;width:150%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["users", "orders", "feedbacks", "queries", "products"];
+var yValues = [55, 49, 44, 38, 33];
+var barColors = ["red", "yellow","blue","orange","green"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Our Project Live Details 2023"
+    }
+  }
+});
+</script>
+<!-- End of Bar Chart -->
+
+<!-- Start of Pie Chart -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+<canvas id="myChart1" style="margin-top:-300px;margin-left:600px;width:100%; max-width:400px; height:300px;"></canvas>
+
+<script>
+const xValues1 = ["Nidasoshi", "Chikodi", "Hukkeri", "Belagavi", "Sankeskwar"];
+const yValues1 = [55, 49, 44, 24, 15];
+const barColors1 = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart1", {
+  type: "pie",
+  data: {
+    labels: xValues1,
+    datasets: [{
+      backgroundColor: barColors1,
+      data: yValues1
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+});
+</script>
+
+<!-- End of Pie Chart -->
+
+
+
+
+
+    <!----------- end of nav bar------------>
+    <div class="footer1">
+        <h3>&copy; 2023 Project Title Demo. All rights reserved | Design by Prof.Santosh
+            Khot(Mob-9008859518).</h3>
+    </div>
+</div>
+
+</html>
